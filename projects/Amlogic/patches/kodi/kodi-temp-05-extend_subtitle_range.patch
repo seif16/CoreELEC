@@ -1,0 +1,13 @@
+diff --git a/AdvancedSettings.cpp b/AdvancedSettings1.cpp
+index e06bee8..83b66c6 100644
+--- a/xbmc/settings/AdvancedSettings.cpp
++++ b/xbmc/settings/AdvancedSettings.cpp
+@@ -598,7 +598,7 @@ void CAdvancedSettings::ParseSettingsFile(const std::string &file)
+     XMLUtils::GetString(pElement, "stereoscopicregex3d", m_stereoscopicregex_3d);
+     XMLUtils::GetString(pElement, "stereoscopicregexsbs", m_stereoscopicregex_sbs);
+     XMLUtils::GetString(pElement, "stereoscopicregextab", m_stereoscopicregex_tab);
+-    XMLUtils::GetFloat(pElement, "subsdelayrange", m_videoSubsDelayRange, 10, 600);
++    XMLUtils::GetFloat(pElement, "subsdelayrange", m_videoSubsDelayRange, 10, 14400);
+     XMLUtils::GetFloat(pElement, "audiodelayrange", m_videoAudioDelayRange, 10, 600);
+     XMLUtils::GetString(pElement, "defaultplayer", m_videoDefaultPlayer);
+     XMLUtils::GetBoolean(pElement, "fullscreenonmoviestart", m_fullScreenOnMovieStart);
